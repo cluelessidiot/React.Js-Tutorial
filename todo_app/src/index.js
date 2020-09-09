@@ -1,7 +1,20 @@
+// import React from 'react';
+// import ReactDOM from 'react-dom';
+
+// ReactDOM.render( < div > <h1> Hello World </h1><p>This is a paragraph</p> </div>,document.getElementById("root"))
+// var newP = document.createElement("p");
+// newP.innerHTML="This is basics of React.js";
+// document.body.appendChild(newP);
+
 import React from 'react';
 import ReactDOM from 'react-dom';
+const list = <ul>
+    <li> one</li>
+    <li> two </li>
+    <li> three</li>
+    </ul>;
+function MyApp(){
 
-ReactDOM.render( < div > <h1> Hello World </h1><p>This is a paragraph</p> </div>,document.getElementById("root"))
-var newP = document.createElement("p");
-newP.innerHTML="This is basics of React.js";
-document.body.appendChild(newP);
+    return list;
+}    
+ReactDOM.render(<MyApp />,document.getElementById("root"));

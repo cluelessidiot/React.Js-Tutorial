@@ -1,31 +1,10 @@
 import React from 'react';
-// import logo from './logo.svg';
-// import './App.css';
-import ReactDOM from 'react-dom';
-ReactDOM.render( < h1 > Hello World < /h1>,document.getElementById("root"))
+import Footer from './components/Footer'
+import Header from './components/Header';
+import Content from './components/Content'
+import Navbar from './components/Navbar'
 
-
-
-
-        // function App() {
-        //   return (
-        //     <div className="App">
-        //       <header className="App-header">
-        //         <img src={logo} className="App-logo" alt="logo" />
-        //         <p>
-        //           Edit <code>src/App.js</code> and save to reload.
-        //         </p>
-        //         <a
-        //           className="App-link"
-        //           href="https://reactjs.org"
-        //           target="_blank"
-        //           rel="noopener noreferrer"
-        //         >
-        //           Learn React
-        //         </a>
-        //       </header>
-        //     </div>
-        //   );
-        // }
-
-        export default App;
+function App(){
+    return <div><Navbar /><Header /> <Content /><Footer /></div> ;
+}
+export default App;

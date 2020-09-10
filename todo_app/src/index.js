@@ -6,15 +6,21 @@
 // newP.innerHTML="This is basics of React.js";
 // document.body.appendChild(newP);
 
-import React from 'react';
-import ReactDOM from 'react-dom';
-const list = <ul>
-    <li> one</li>
-    <li> two </li>
-    <li> three</li>
-    </ul>;
-function MyApp(){
+// import React from 'react';
+// import ReactDOM from 'react-dom';
+// const list = <ul>
+//     <li> one</li>
+//     <li> two </li>
+//     <li> three</li>
+//     </ul>;
+// function MyApp(){
 
-    return list;
-}    
-ReactDOM.render(<MyApp />,document.getElementById("root"));
+//     return list;
+// }    
+// ReactDOM.render(<MyApp />,document.getElementById("root"));
+
+import React from 'react';
+import ReactDOM  from 'react-dom';
+import MyInfo from "./components/MyInfo.js";
+import App from "./App"
+ReactDOM.render(<App />,document.getElementById('root'))

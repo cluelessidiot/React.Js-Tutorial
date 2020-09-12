@@ -1,10 +1,10 @@
 import React from 'react'
 
-function Todo() {
+function Todo(props) {
     return <div className="todo-item">
         
         <input type = "checkbox"/>
-        <p> text </p> 
+        <p> {props.text} </p> 
         </div>
 }
 export default Todo

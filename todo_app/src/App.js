@@ -1,10 +1,18 @@
-import React from 'react';
-import Footer from './components/Footer'
-import Header from './components/Header';
-import Content from './components/Content'
-import Navbar from './components/Navbar'
-
+import React from 'react'
+import Todo from './components/Todo'
+import './index.css'
+// function App(){
+//         var name = "aathil";
+// return <h1>hello {name}</h1>
+// }
 function App(){
-    return <div><Navbar /><Header /> <Content /><Footer /></div> ;
+
+        return <div className="todo-list">
+                <Todo />
+                <Todo />
+                <Todo />
+                <Todo />
+                <Todo />
+                </div>
 }
-export default App;
+export default App

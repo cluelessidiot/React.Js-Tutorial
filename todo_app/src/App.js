@@ -6,14 +6,21 @@ import todo from './todos'
 //         var name = "aathil";
 // return <h1>hello {name}</h1>
 // }
-function App(){
+class App extends React.Component{
+        constructor(){
+                super();
+                this.state={todos:todo}
+        }
+        
+        render(){
 
-        const todoList = todo.map(todoitem=>{
+        const todoList = this.state.todos.map(todoitem=>{
                 return <Todo  key={todoitem.id} text={todoitem.text}/>
         })
         console.log(todoList)
         return <div className="todo-list">
                 {todoList}
                 </div>
+        }        
 }
 export default App
